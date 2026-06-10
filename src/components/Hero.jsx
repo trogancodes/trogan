@@ -28,15 +28,15 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-svh flex-col justify-center overflow-hidden pt-28"
+     className="relative flex min-h-svh flex-col justify-center overflow-hidden pt-20 pb-10"
     >
 
       {/* ── Portrait image right panel ── */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-[45%]">
+      <div className="pointer-events-none relative md:absolute md:right-0 md:top-0 md:h-full w-full md:w-[45%] h-64 mt-8 md:mt-0">
         <motion.img
           src={portrait}
           alt="Trogan — UX/Product Designer and Developer"
-          className="h-full w-full object-cover object-top"
+         className="h-full w-full object-cover object-top md:object-top object-center"
           initial={{ opacity: 0, scale: reduce ? 1 : 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
@@ -54,7 +54,7 @@ export default function Hero() {
       {/* ── Decorative line — sits above portrait ── */}
    
       {/* ── Text content — sits above everything ── */}
-      <div className="rail relative z-30">
+      <div className="rail relative z-30 md:max-w-[55%]"">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
