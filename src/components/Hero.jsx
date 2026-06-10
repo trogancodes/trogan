@@ -54,7 +54,7 @@ export default function Hero() {
       {/* ── Decorative line — sits above portrait ── */}
    
       {/* ── Text content — sits above everything ── */}
-      <div className="rail relative z-30 md:max-w-[55%]"">
+     <div className="rail relative z-30 md:max-w-2xl">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
